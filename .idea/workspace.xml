@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b93cdd9e-d462-4f0d-86c4-644443613872" name="Default Changelist" comment="Delta-Lake" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="JupyterTrust" id="c4ec7eb2-1fdf-4d43-9b2a-1a168ac4589f" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="2AsS48dvbk7rgkETNMeGtumVsfq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.47356322" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager" selected="Application.Delta">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="delta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Delta" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.demo.Delta" />
+      <module name="delta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Delta" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b93cdd9e-d462-4f0d-86c4-644443613872" name="Default Changelist" comment="" />
+      <created>1655796608280</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655796608280</updated>
+      <workItem from="1655796609541" duration="774000" />
+      <workItem from="1655797430794" duration="1897000" />
+      <workItem from="1655799388536" duration="8669000" />
+      <workItem from="1655811764411" duration="571000" />
+      <workItem from="1655812362312" duration="1519000" />
+      <workItem from="1655813963691" duration="57000" />
+      <workItem from="1655814088358" duration="175000" />
+      <workItem from="1655814346210" duration="128000" />
+      <workItem from="1655814492912" duration="143000" />
+    </task>
+    <task id="LOCAL-00001" summary="Delta-Lake">
+      <created>1655811935752</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655811935753</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Delta-Lake" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delta-Lake" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="179" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1655801345466">
+      <screen x="0" y="25" width="1440" height="794" />
+    </state>
+    <state x="458" y="178" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.25.1440.788@0.25.1440.788" timestamp="1655799044992" />
+    <state x="458" y="179" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.25.1440.794@0.25.1440.794" timestamp="1655801345466" />
+    <state x="460" y="337" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1655813977177">
+      <screen x="0" y="25" width="1440" height="788" />
+    </state>
+    <state x="460" y="337" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655813977177" />
+    <state width="1398" height="249" key="GridCell.Tab.0.bottom" timestamp="1655812348331">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655798295778" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.788@0.25.1440.788" timestamp="1655798627131" />
+    <state width="1398" height="249" key="GridCell.Tab.0.bottom/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812348331" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1655802616390" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.794@0.25.1440.794" timestamp="1655801958208" />
+    <state width="1398" height="249" key="GridCell.Tab.0.center" timestamp="1655812348323">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655798295777" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.788@0.25.1440.788" timestamp="1655798627128" />
+    <state width="1398" height="249" key="GridCell.Tab.0.center/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812348323" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1655802616390" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.794@0.25.1440.794" timestamp="1655801958207" />
+    <state width="1398" height="249" key="GridCell.Tab.0.left" timestamp="1655812348321">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655798295776" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.788@0.25.1440.788" timestamp="1655798627127" />
+    <state width="1398" height="249" key="GridCell.Tab.0.left/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812348321" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1655802616390" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.794@0.25.1440.794" timestamp="1655801958206" />
+    <state width="1398" height="249" key="GridCell.Tab.0.right" timestamp="1655812348323">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655798295777" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.788@0.25.1440.788" timestamp="1655798627128" />
+    <state width="1398" height="249" key="GridCell.Tab.0.right/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812348323" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1655802616390" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.794@0.25.1440.794" timestamp="1655801958208" />
+    <state x="464" y="143" key="RollbackChangesDialog" timestamp="1655813522831">
+      <screen x="0" y="25" width="1440" height="788" />
+    </state>
+    <state x="464" y="143" key="RollbackChangesDialog/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655813522831" />
+    <state x="208" y="25" key="SettingsEditor" timestamp="1655814537053">
+      <screen x="0" y="25" width="1440" height="788" />
+    </state>
+    <state x="208" y="25" key="SettingsEditor/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655814537053" />
+    <state x="208" y="25" key="SettingsEditor/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655810237224" />
+    <state x="208" y="25" key="SettingsEditor/0.25.1440.791@0.25.1440.791" timestamp="1655799359819" />
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1655814180853">
+      <screen x="0" y="25" width="1440" height="788" />
+    </state>
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655814180853" />
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812812885" />
+    <state x="472" y="311" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1655814175683">
+      <screen x="0" y="25" width="1440" height="788" />
+    </state>
+    <state x="472" y="311" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655814175683" />
+    <state x="472" y="312" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812793666" />
+  </component>
+</project>
