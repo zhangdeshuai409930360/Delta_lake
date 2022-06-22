@@ -108,7 +108,7 @@ object Delta {
     /**
      * 版本追溯
      */
-    session.read.format("delta").option("versionAsOf", 1).load("/Users/anker/test").show(false)
+    session.read.format("delta").option("versionAsOf", 3).load("/Users/anker/test").show(false)
 
   }
 }
