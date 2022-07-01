@@ -53,7 +53,16 @@
             <artifactId>scala-library</artifactId>
             <version>2.12.12</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.hudi</groupId>
+            <artifactId>hudi-spark3-bundle_2.12</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-avro_2.12</artifactId>
+            <version>3.1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
