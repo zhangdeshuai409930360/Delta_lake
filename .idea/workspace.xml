@@ -4,31 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <expand />
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b93cdd9e-d462-4f0d-86c4-644443613872" name="Default Changelist" comment="Delta-Lake" />
+    <list default="true" id="b93cdd9e-d462-4f0d-86c4-644443613872" name="Default Changelist" comment="【更新】hudi示例代码">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hudi_hudi_spark3_bundle_2_12_0_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_avro_2_12_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/delta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/delta.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_8_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/demo/Delta.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/demo/delta/Delta.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/org/demo/hudi/Hudi.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/org/demo/hudi/Hudi.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,10 +27,10 @@
     <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="JupyterTrust" id="c4ec7eb2-1fdf-4d43-9b2a-1a168ac4589f" />
+  <component name="JupyterTrust" id="34dd67d9-bec1-41f7-a455-c7ab6aab2d78" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -66,22 +55,41 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.47356322" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Delta">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Hudi">
     <configuration name="App" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="delta" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Delta (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.demo.delta.Delta" />
+      <module name="delta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.demo.delta.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,21 +110,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="Hudi" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.demo.hudi.Hudi" />
+      <module name="delta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.demo.hudi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Hudi" />
+        <item itemvalue="Application.Delta (1)" />
         <item itemvalue="Application.Delta" />
         <item itemvalue="Application.App" />
       </list>
@@ -139,6 +160,16 @@
       <workItem from="1655814088358" duration="175000" />
       <workItem from="1655814346210" duration="128000" />
       <workItem from="1655814492912" duration="143000" />
+      <workItem from="1655814653130" duration="697000" />
+      <workItem from="1655861108061" duration="6006000" />
+      <workItem from="1655897035692" duration="7580000" />
+      <workItem from="1656313824260" duration="189000" />
+      <workItem from="1656314058927" duration="3201000" />
+      <workItem from="1656318135147" duration="18870000" />
+      <workItem from="1656914642033" duration="6577000" />
+      <workItem from="1657007941317" duration="1205000" />
+      <workItem from="1657093043584" duration="8118000" />
+      <workItem from="1657268265787" duration="1404000" />
     </task>
     <task id="LOCAL-00001" summary="Delta-Lake">
       <created>1655811935752</created>
@@ -147,7 +178,56 @@
       <option name="project" value="LOCAL" />
       <updated>1655811935753</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Delta-Lake">
+      <created>1655814719961</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655814719962</updated>
+    </task>
+    <task id="LOCAL-00003" summary="【更新】">
+      <created>1655866379806</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655866379806</updated>
+    </task>
+    <task id="LOCAL-00004" summary="【更新】">
+      <created>1655897598958</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655897598958</updated>
+    </task>
+    <task id="LOCAL-00005" summary="【更新】">
+      <created>1656314629123</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656314629124</updated>
+    </task>
+    <task id="LOCAL-00006" summary="【更新】">
+      <created>1656570531132</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656570531132</updated>
+    </task>
+    <task id="LOCAL-00007" summary="【更新】hudi jar包">
+      <created>1656656442427</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656656442428</updated>
+    </task>
+    <task id="LOCAL-00008" summary="【更新】hudi示例代码">
+      <created>1656658641599</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656658641599</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,15 +243,23 @@
             </State>
           </value>
         </entry>
-        <entry key="MAIN">
+        <entry key="2">
           <value>
             <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
                       </list>
                     </value>
                   </entry>
@@ -180,11 +268,17 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_GENERIC_TABS">
       <map>
         <entry key="1" value="TOOL_WINDOW" />
+        <entry key="2" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -194,7 +288,10 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="Delta-Lake" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delta-Lake" />
+    <MESSAGE value="【更新】" />
+    <MESSAGE value="【更新】hudi jar包" />
+    <MESSAGE value="【更新】hudi示例代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="【更新】hudi示例代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="179" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1655801345466">
@@ -202,57 +299,65 @@
     </state>
     <state x="458" y="178" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.25.1440.788@0.25.1440.788" timestamp="1655799044992" />
     <state x="458" y="179" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.25.1440.794@0.25.1440.794" timestamp="1655801345466" />
+    <state x="212" y="223" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1657108802880">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state x="212" y="223" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1657108802880" />
     <state x="460" y="337" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1655813977177">
       <screen x="0" y="25" width="1440" height="788" />
     </state>
     <state x="460" y="337" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655813977177" />
-    <state width="1398" height="249" key="GridCell.Tab.0.bottom" timestamp="1655812348331">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state width="1398" height="159" key="GridCell.Tab.0.bottom" timestamp="1657156921098">
+      <screen x="0" y="25" width="1440" height="788" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655798295778" />
+    <state width="1398" height="159" key="GridCell.Tab.0.bottom/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1657156921098" />
     <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.788@0.25.1440.788" timestamp="1655798627131" />
-    <state width="1398" height="249" key="GridCell.Tab.0.bottom/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812348331" />
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1655802616390" />
+    <state width="1398" height="159" key="GridCell.Tab.0.bottom/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1657095530914" />
+    <state width="1398" height="159" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1657103826665" />
     <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.794@0.25.1440.794" timestamp="1655801958208" />
-    <state width="1398" height="249" key="GridCell.Tab.0.center" timestamp="1655812348323">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state width="1398" height="159" key="GridCell.Tab.0.center" timestamp="1657156921097">
+      <screen x="0" y="25" width="1440" height="788" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655798295777" />
+    <state width="1398" height="159" key="GridCell.Tab.0.center/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1657156921097" />
     <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.788@0.25.1440.788" timestamp="1655798627128" />
-    <state width="1398" height="249" key="GridCell.Tab.0.center/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812348323" />
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1655802616390" />
+    <state width="1398" height="159" key="GridCell.Tab.0.center/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1657095530913" />
+    <state width="1398" height="159" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1657103826665" />
     <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.794@0.25.1440.794" timestamp="1655801958207" />
-    <state width="1398" height="249" key="GridCell.Tab.0.left" timestamp="1655812348321">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state width="1398" height="159" key="GridCell.Tab.0.left" timestamp="1657156921097">
+      <screen x="0" y="25" width="1440" height="788" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655798295776" />
+    <state width="1398" height="159" key="GridCell.Tab.0.left/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1657156921097" />
     <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.788@0.25.1440.788" timestamp="1655798627127" />
-    <state width="1398" height="249" key="GridCell.Tab.0.left/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812348321" />
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1655802616390" />
+    <state width="1398" height="159" key="GridCell.Tab.0.left/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1657095530913" />
+    <state width="1398" height="159" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1657103826663" />
     <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.794@0.25.1440.794" timestamp="1655801958206" />
-    <state width="1398" height="249" key="GridCell.Tab.0.right" timestamp="1655812348323">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state width="1398" height="159" key="GridCell.Tab.0.right" timestamp="1657156921097">
+      <screen x="0" y="25" width="1440" height="788" />
     </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655798295777" />
+    <state width="1398" height="159" key="GridCell.Tab.0.right/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1657156921097" />
     <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.788@0.25.1440.788" timestamp="1655798627128" />
-    <state width="1398" height="249" key="GridCell.Tab.0.right/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812348323" />
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1655802616390" />
+    <state width="1398" height="159" key="GridCell.Tab.0.right/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1657095530914" />
+    <state width="1398" height="159" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1657103826665" />
     <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.794@0.25.1440.794" timestamp="1655801958208" />
     <state x="464" y="143" key="RollbackChangesDialog" timestamp="1655813522831">
       <screen x="0" y="25" width="1440" height="788" />
     </state>
     <state x="464" y="143" key="RollbackChangesDialog/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655813522831" />
-    <state x="208" y="25" key="SettingsEditor" timestamp="1655814537053">
+    <state x="139" y="47" key="SettingsEditor" timestamp="1656314277924">
       <screen x="0" y="25" width="1440" height="788" />
     </state>
-    <state x="208" y="25" key="SettingsEditor/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655814537053" />
+    <state x="139" y="47" key="SettingsEditor/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1656314277924" />
     <state x="208" y="25" key="SettingsEditor/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655810237224" />
     <state x="208" y="25" key="SettingsEditor/0.25.1440.791@0.25.1440.791" timestamp="1655799359819" />
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1655814180853">
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2" timestamp="1656658643696">
       <screen x="0" y="25" width="1440" height="788" />
     </state>
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1655814180853" />
-    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1655812812885" />
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1656658643696" />
+    <state x="320" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.791/1440.25.1920.1055@0.25.1440.791" timestamp="1656656445134" />
+    <state x="421" y="128" width="597" height="582" key="find.popup" timestamp="1657093132317">
+      <screen x="0" y="25" width="1440" height="788" />
+    </state>
+    <state x="421" y="128" width="597" height="582" key="find.popup/0.25.1440.788/1440.25.1920.1055@0.25.1440.788" timestamp="1657093132317" />
     <state x="472" y="311" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1655814175683">
       <screen x="0" y="25" width="1440" height="788" />
     </state>

@@ -1,4 +1,4 @@
-package org.demo
+package org.demo.delta
 
 import io.delta.tables.DeltaTable
 import org.apache.spark.sql.SparkSession
@@ -30,31 +30,38 @@ object Delta {
     /**
      * 查询文件写入
      */
-    // sourceDF
-    //    val sourceDF = sc.textFile("/Users/anker/source.txt")
-    //      .map(line => {
-    //        val arr = line.split(",")
-    //        Source(arr(0), arr(1), arr(2), arr(3), arr(4))
-    //      }).toDF
-    //
-    //    sourceDF.show(10)
-    //
-    //    // write DataFrame as Delta
-    //    sourceDF
-    //      .write
-    //      .format("delta")
-    //      .mode("overwrite")
-    //      .save("/Users/anker/test")
+//        val sourceDF = sc.textFile("/Users/anker/IdeaProjects/delta/src/main/source_data/source.txt")
+//          .map(line => {
+//            val arr = line.split(",")
+//            Source(arr(0), arr(1), arr(2), arr(3), arr(4))
+//          }).toDF
+//
+//        sourceDF.show(10)
+//
+//        // write DataFrame as Delta
+//        sourceDF
+//          .write
+//          .format("delta")
+//          .mode("overwrite")
+//          .save("/Users/anker/IdeaProjects/delta/src/main/result_data")
+
+
+   // DeltaTable.forPath(session, "/Users/anker/IdeaProjects/delta/src/main/result_data").toDF.show(false)
 
 
     /**
      * 给sex='男' money字段后拼接'-11'
      */
-    //   val sourceTable = DeltaTable.forPath(session, "/Users/anker/test")
-    //sex='男' money字段后拼接'-11'
-    //    sourceTable.update(expr("sex=='男'"), Map("money" -> expr("concat(money, '-11')")))
-    //
-    //    sourceTable.toDF.show(false)
+//       val sourceTable = DeltaTable.forPath(session, "/Users/anker/IdeaProjects/delta/src/main/result_data")
+//        sourceTable.update(expr("sex=='男'"), Map("money" -> expr("concat(money, '-11')")))
+//
+//        sourceTable.toDF.show(false)
+
+    /**
+     * 版本追溯
+     */
+    session.read.format("delta").option("versionAsOf", 0).load("/Users/anker/IdeaProjects/delta/src/main/result_data").show(false)
+
 
     /**
      * 删除sex="男"的数据
@@ -64,6 +71,10 @@ object Delta {
     //    sourceTable.delete(expr("sex=='男'"))
     //
     //    sourceTable.toDF.show(false)
+
+
+
+
 
 
     /**
@@ -105,10 +116,6 @@ object Delta {
     //    DeltaTable.forPath(session, "/Users/anker/test").toDF.show(false)
     //    DeltaTable.forPath(session, "/Users/anker/test1").toDF.show(false)
 
-    /**
-     * 版本追溯
-     */
-    session.read.format("delta").option("versionAsOf", 1).load("/Users/anker/test").show(false)
 
   }
 }

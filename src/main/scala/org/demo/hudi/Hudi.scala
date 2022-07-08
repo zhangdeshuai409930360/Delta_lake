@@ -17,7 +17,7 @@ object Hudi {
     // 第1步、模拟乘车数据
     import org.apache.hudi.QuickstartUtils._
     val dataGen: DataGenerator = new DataGenerator()
-    val inserts = convertToStringList(dataGen.generateInserts(100))
+    val inserts = convertToStringList(dataGen.generateInserts(10))
     import scala.collection.JavaConverters._
     val insertDF: DataFrame = spark.read.json(
       spark.sparkContext.parallelize(inserts.asScala, 2).toDS()
@@ -28,7 +28,7 @@ object Hudi {
     import org.apache.hudi.DataSourceWriteOptions._
     import org.apache.hudi.config.HoodieWriteConfig._
     insertDF.write
-      .mode(SaveMode.Append)
+      .mode(SaveMode.Overwrite)
       .format("hudi")
       .option("hoodie.insert.shuffle.parallelism", 2)
       .option("hoodie.insert.shuffle.parallelism", 2)
@@ -55,7 +55,7 @@ object Hudi {
       .filter($"fare" >= 20 && $"fare" <=50)
       .select($"driver", $"rider", $"fare", $"begin_lat", $"begin_lon", $"partitionpath", $"_hoodie_commit_time")
       .orderBy($"fare".desc, $"_hoodie_commit_time".desc)
-      .show(100, truncate = false)
+      .show(1000, truncate = false)
   }
 
   def queryDataByTime(spark: SparkSession, path: String):Unit = {
@@ -63,7 +63,7 @@ object Hudi {
     //方式一：指定字符串，按照日期时间过滤获取数据
     val df1 = spark.read
       .format("hudi")
-      .option("as.of.instant", "20220701142440")
+      .option("as.of.instant", "20220701145102")
       .load(path)
       .sort(col("_hoodie_commit_time").desc)
     df1.printSchema()
@@ -76,6 +76,16 @@ object Hudi {
       .sort(col("_hoodie_commit_time").desc)
     df2.printSchema()
     df2.show(numRows = 5, truncate = false)
+
+    //方式二：指定字符串，按照日期时间过滤获取数据
+    // It is equal to "as.of.instant = 2021-07-28 00:00:00"
+    val df3 = spark.read
+      .format("hudi")
+      //.option("as.of.instant", "2022-07-01")
+      .load(path)
+      .sort(col("_hoodie_commit_time").desc)
+    df3.printSchema()
+    df3.show(numRows = 1000, truncate = false)
   }
 
 
@@ -86,6 +96,7 @@ object Hudi {
     import spark.implicits._
     // 第1步、模拟乘车数据
     import org.apache.hudi.QuickstartUtils._
+
     val inserts = convertToStringList(dataGen.generateInserts(100))
     import scala.collection.JavaConverters._
     val insertDF: DataFrame = spark.read.json(
@@ -113,12 +124,13 @@ object Hudi {
   /**
    * 模拟产生Hudi表中更新数据，将其更新到Hudi表中
    */
-  def updateData(spark: SparkSession, table: String, path: String, dataGen: DataGenerator):Unit = {
+  def updateData(spark: SparkSession, table: String, path: String):Unit = {
     import spark.implicits._
     // 第1步、模拟乘车数据
     import org.apache.hudi.QuickstartUtils._
     //产生更新的数据
-    val updates = convertToStringList(dataGen.generateUpdates(100))
+    val dataGen: DataGenerator = new DataGenerator()
+    val updates = convertToStringList(dataGen.generateUpdates(10))
     import scala.collection.JavaConverters._
     val updateDF: DataFrame = spark.read.json(
       spark.sparkContext.parallelize(updates.asScala, 2).toDS()
@@ -246,7 +258,7 @@ object Hudi {
     //insertData(spark, tableName, tablePath)
 
     //任务二：快照方式查询（Snapshot Query）数据，采用DSL方式
-    //queryData(spark, tablePath)
+    queryData(spark, tablePath)
 
     //根据时间筛选
     // queryDataByTime(spark, tablePath)
@@ -254,13 +266,13 @@ object Hudi {
     // 任务三：更新（Update）数据，第1步、模拟产生数据，第2步、模拟产生数据，针对第1步数据字段值更新，
     // 第3步、将数据更新到Hudi表中
     val dataGen: DataGenerator = new DataGenerator()
-//    insertData(spark, tableName, tablePath, dataGen)
-//    updateData(spark, tableName, tablePath, dataGen)
+    //insertData(spark, tableName, tablePath,dataGen)
+   // updateData(spark, tableName, tablePath)
 
     //任务四：增量查询（Incremental Query）数据，采用SQL方式
     //incrementalQueryData(spark, tablePath)
 
-    deleteData(spark,tableName,tablePath)
+    //deleteData(spark,tableName,tablePath)
     spark.stop()
   }
 }
